@@ -13,34 +13,29 @@
 
 		<?php wp_head(); ?>
 		<script>
-        // conditionizr.com
-        // configure environment tests
-        conditionizr.config({
-            assets: '<?php echo get_template_directory_uri(); ?>',
-            tests: {}
-        });
-        </script>
-
+    // conditionizr.com
+    // configure environment tests
+    conditionizr.config({
+        assets: '<?php echo get_template_directory_uri(); ?>',
+        tests: {}
+    });
+    </script>
 	</head>
 	<body <?php body_class(); ?>>
 		<div class="page-loader">
 			<!-- <img class="m-l-auto m-r-auto" src="<?=get_template_directory_uri().'/assets/img/sportiforme-blue.png'?>" alt="coach sportif sportiforme à domicile Poitiers"> -->
 		</div>
-
 		<!-- wrapper -->
 		<div class="wrapper">
-
 			<!-- header -->
 			<header class="header anim-300 clear" role="banner">
-
-				<!-- nav -->
-				<div class="container menu-container anim-300">
-                    <?php require 'includes/header-left.php'; ?>
-                </div>
-				<!-- /nav -->
-
+				<div class="menu-container w-100 pl-50 pr-50 anim-300">
+            <?php require 'includes/header-left.php'; ?>
+        </div>
 			</header>
 			<!-- /header -->
 			<nav class="nav-mobile" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'burger-menu' ) ); ?>
+				<div class="h-100 d-flex flex-column align-items-center justify-content-center">
+					<?php wp_nav_menu( array( 'theme_location' => 'burger-menu' ) ); ?>
+				</div>
 			</nav>

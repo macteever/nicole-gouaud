@@ -1,4 +1,4 @@
-<div class="row align-items-center menu-section anim-300">
+<div class="row align-items-center menu-section anim-300 justify-content-between">
     <div class="col-xl-3 col-lg-3 col-3 anim-300 container-logo-menu pl-15">
        <!-- logo -->
           <div class="logo anim-300">
@@ -18,7 +18,7 @@
                 <span></span>
                 <span></span>
              </button>
-             <span class="text-darkgrey ml-10">MENU</span>
+             <!-- <span class="text-darkgrey ml-10">MENU</span> -->
           </div>
         </nav>
         <!-- /nav -->
