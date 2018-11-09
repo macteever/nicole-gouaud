@@ -1,32 +1,24 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-		<!-- post thumbnail -->
-		<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-				<?php the_post_thumbnail(array(120,120)); // Declare pixel size you need inside the array ?>
-			</a>
-		<?php endif; ?>
-		<!-- /post thumbnail -->
-
-		<!-- post title -->
-		<h2>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-		</h2>
-		<!-- /post title -->
-
-		<!-- post details -->
-		<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-		<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-		<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
-		<!-- /post details -->
-
-		<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
-
-		<?php edit_post_link(); ?>
-
+		<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+			<div class="row p-relative align-items-center anim-300">
+					<div class="col-xl-9 col-lg-9 col-12 index-img anim-300">
+						<?php if ( has_post_thumbnail()) : ?>
+							<?php the_post_thumbnail(); ?>
+						<?php endif; ?>
+					</div>
+					<div class="col-xl-5 col-lg-5 col-12 index-content anim-300 p-absolute text-white">
+						<span class="date uppercase text-center text-white fs-18"><?php the_time('F j, Y'); ?></span>
+						<h2 class="lekton fs-24 fw-700 mt-15 text-white">
+							<a class="text-white" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+						</h2>
+						<p class="fs-16 lh-24 ls-2">
+							<?php html5wp_excerpt('html5wp_index'); ?>
+						</p>
+					</div>
+			</div>
+		</a>
 	</article>
 	<!-- /article -->
 

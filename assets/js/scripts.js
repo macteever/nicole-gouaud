@@ -1,7 +1,14 @@
 (function ($, root, undefined) {
 
 		$(document).ready(function(){
-
+		// APPRARITION
+		var delay = 0;
+		 $('.apparition').each(function() {
+		   var $li = $(this);
+		   setTimeout(function() {
+			 $li.addClass('animation-fade-up');
+		   }, delay+=100); // delay 100 ms
+		 });
 
 
     // RESIZE HEADER SCROLLTOP

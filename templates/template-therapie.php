@@ -79,7 +79,7 @@
             endif;
             ?>
           </div>
-          <div class="col-xl-6 col-lg-6 col-12 entretien-img">
+          <div class="col-xl-6 col-lg-6 col-12 entretien-img apparition">
             <?php $image = get_field('img_etapes'); ?>
             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
           </div>
