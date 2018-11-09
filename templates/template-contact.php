@@ -1,34 +1,35 @@
 <?php /* Template Name: Contact */ get_header(); ?>
-
 	<main role="main" class="main-content">
-		<div class="container-fluid pl-0 pr-0">
-				<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<div class="row no-flex ml-0 mr-0">
-						<div class="text-container-left float-left mt-150 mb-80">
-							<h1 class="fs-48 mt-30 mb-15 contact-title-after"><?php the_title(); ?></h1>
-							<div class="fs-18 fw-300 lh-18 mb-30"><?php the_field('contact_descr'); ?></div>
-							<?php the_content(); ?>
-						</div>
-						<div class="float-left col-xl-6 col-lg-6 col-md-6 col-12 pr-0 contact-map">
-							<div id="map"></div>
-						</div>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row mt-100" id="map"></div>
+				<div class="row mt-100 mb-100 align-items-center contact-formulaire">
+					<div class="col-xl-3 col-lg-3 col-12">
+						<?php
+	  				if( have_rows('infos_contact') ):
+	  				    while ( have_rows('infos_contact') ) : the_row();
+	  						?>
+								<div class="d-flex align-items-center justify-content-around mb-10">
+									<div class="mr-auto">
+										<h4 class="fs-15 lekton fw-700"><?php the_sub_field('label'); ?></h4>
+										<p class="lekton fs-16 lh-24"><?php the_sub_field('infos'); ?></p>
+									</div>
+								</div>
+	  						<?php
+	  				    endwhile;
+	  				else :
+	  				endif;
+	  				?>
 					</div>
+					<div class="col-xl-9 col-lg-9 col-12">
+						<?php echo do_shortcode('[contact-form-7 id="5" title="Formulaire de contact 1"]'); ?>
+					</div>
+				</div>
+			</div>
 
-				</article>
-				<!-- /article -->
-			<?php endwhile; ?>
-
-			<?php else: ?>
-				<!-- article -->
-				<article>
-					<h2><?php _e( 'Sorry, nothing to display.', 'starterTheme' ); ?></h2>
-				</article>
-				<!-- /article -->
-			<?php endif; ?>
-		    <script async defer
-		      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYM2FZ6PBFvla3XFMkE6xALHBw2KPY3LY&callback=initMap">
-		    </script>
+	    <script async defer
+	      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYM2FZ6PBFvla3XFMkE6xALHBw2KPY3LY&callback=initMap">
+	    </script>
 		</div>
 	</main>
 <!-- /container-fluid -->

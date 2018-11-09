@@ -69,7 +69,6 @@
 							<div class="home-therapy-link mt-30">
 									<a class="lekton fs-16 home-btn" href="<?php the_sub_field('lien'); ?>">En savoir +</a>
 							</div>
-
 						</div>
 						<?php
 				    endwhile;
@@ -103,7 +102,7 @@
 					<!-- 	<div>  -->
 					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 						<div class="col-xl-6 col-lg-6 col-md-6 col-12 float-left home-post p-relative">
-							<img class="w-100 h-100" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" alt="Nicole Gouaud psychothérapie sophrologie">
+							<img class="w-100 h-100" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" alt="Nicole Gouaud psychothérapie sophrologie libourne">
 							<div class="home-post-overlay text-white">
 								<a class="d-block w-100 h-100" href="<?php the_permalink(); ?>">
 									<div class="home-overlay-details">
