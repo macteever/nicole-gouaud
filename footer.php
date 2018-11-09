@@ -1,28 +1,31 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
 				<div class="container-fluid" id="contact">
-					<div class="row justify-content-around mw-70 mx-auto mb-30">
-							<a href="#" target="blank"><i class="fa fa-facebook-official text-darkgrey fs-28" aria-hidden="true"></i></a>
-							<a href="#" target="blank"><i class="fa fa-instagram text-darkgrey fs-28" aria-hidden="true"></i></a>
-							<a href="#"><i class="fa fa-google-plus text-darkgrey fs-24" aria-hidden="true"></i></a>
+					<div class="container">
+						<div class="row">
+							<div class="col-xl-4 col-lg-4 col-12 lekton fs-16">
+								<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Widget Area 1', 'html5blank') )?>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-12">
+								<div class="d-flex justify-content-around align-items-center">
+									<a href="#" target="blank"><i class="fa fa-facebook-official text-darkgrey fs-20" aria-hidden="true"></i></a>
+									<a href="#" target="blank"><i class="fa fa-instagram text-darkgrey fs-20" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-google-plus text-darkgrey fs-16" aria-hidden="true"></i></a>
+								</div>
+							</div>
+							<div class="col-xl-4 col-lg-4 col-12 lekton fs-16 text-right">
+								<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Widget Area 2', 'html5blank') )?>
+							</div>
+						</div>
+						<div class="d-flex copyright text-darkgrey justify-content-center mt-30">
+							<p class="text-darkgrey text-center fs-12 uppercase ls-3">
+								<?php echo date('Y'); ?> | <?php bloginfo('name'); ?>
+							</p>
+						</div>
 					</div>
-
-					<div class="row copyright text-darkgrey justify-content-center">
-						<!-- copyright -->
-						<p class="text-darkgrey fs-15">
-							&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>
-							<a href="/mentions-legales" class="text-darkgrey">-<b> Mentions légales</b></a>
-						</p>
-						<!-- /copyright -->
-					</div>
-
 				</div>
 			</footer>
-			<!-- /footer -->
-
 		</div>
-		<!-- /wrapper -->
-
 		<?php wp_footer(); ?>
 
 		<!-- analytics -->
@@ -33,8 +36,6 @@
 		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 		  ga('create', 'UA-109419102-1', 'auto');
 		  ga('send', 'pageview');
-
 		</script>
-
 	</body>
 </html>

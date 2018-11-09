@@ -483,7 +483,9 @@ main{
 
 /* footer */
 .footer {
-	border-top: solid 2px #3D3D3D;
+	background-color: #f4f4f4;
+	padding-top: 80px;
+	padding-bottom: 30px;
 }
 
 .page-loader{
@@ -600,17 +602,6 @@ main{
   bottom: 30px;
 }
 
-/* PAGE CAROUSEL 1 */
-
-.owl-item.active .item-child {
-    transition: transform 3000ms linear 0s;
-    /* This should be based on your carousel setting. For bs, it should be 5second*/
-    transform: scale(1.05, 1.05);
-}
-.owl-item.active .item-child h2{
-	transform: scale(0.90)!important;
-}
-
 /** PAGE CONTACT **/
 .contact-title-after:after{
 	content: '';
@@ -652,82 +643,6 @@ textarea{
 }
 
 /* Footer-contact */
-
-.partner{
-	box-shadow: 0 -1px 9px 0 rgba(155,155,155,0.35);
-}
-.partner:before{
-	content: '';
-	display: block;
-	width: 65%;
-	height: 3px;
-	background-color: #9B1F52;
-	position: absolute;
-    left: 0;
-}
-
-#contact{
-	padding-top: 30px;
-}
-.footer-row{
-	margin-bottom: 30px;
-}
-.text-footer{
-	color: #fff;
-	padding: 0px 30px 0px 10px;
-	text-align: justify;
-}
-.text-footer h4{
-	font-weight: 700;
-}
-.coord-footer .textwidget{
-	display: block;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.coord-footer{
-	color: #fff;
-}
-.coord-footer div{
-	margin-top: 15px;
-	margin-bottom: 15px;
-}
-.coord-footer a {
-	color: #fff;
-}
-.footer-sitemap ul{
-	display: flex!important;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.footer-sitemap ul li{
-	margin-right: 20px;
-	padding-top: 30px;
-	width: 33%;
-}
-.footer-sitemap ul li a{
-	color: #FFF!important;
-	font-family: 'Roboto'!important;
-	font-weight: 300!important;
-	font-size: 16px!important;
-}
-.fa-safari:before{
-	margin-right: 15px;
-}
-.fa-mobile:before{
-	margin-right: 22px;
-}
-.fa-envelope:before{
-	margin-right: 15px;
-}
-.footer-parking{
-	border: 2px solid #F4F3F3;
-	border-radius: 5px;
-	text-align: center;
-	padding: 5px 10px;
-	margin-top: 30px!important;
-}
 
 .social-networks{
 	justify-content: space-between;
