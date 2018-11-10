@@ -5,13 +5,13 @@
 	<section class="container mt-100">
     <!-- article -->
   	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  			<div class="row p-relative align-items-center anim-300">
+  			<div class="row p-relative single-row-margin align-items-center anim-300">
   					<div class="col-xl-9 col-lg-9 col-12 index-img anim-300">
   						<?php if ( has_post_thumbnail()) : ?>
   							<?php the_post_thumbnail(); ?>
   						<?php endif; ?>
   					</div>
-  					<div class="col-xl-5 col-lg-5 col-12 index-content anim-300 p-absolute text-white">
+  					<div class="col-xl-5 col-lg-5 col-md-6 col-12 index-content anim-300 p-absolute text-white">
   						<span class="date uppercase text-center text-white fs-18 mb-15"><?php the_time('F j, Y'); ?></span>
 							<div class="row pl-15 flex-column mt-15">
 								<h3 class="lekton fs-16 text-white">Partagez :</h3>

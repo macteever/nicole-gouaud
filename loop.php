@@ -2,7 +2,7 @@
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-			<div class="row p-relative align-items-center anim-300">
+			<div class="row p-relative blog-row align-items-center anim-300">
 					<div class="col-xl-9 col-lg-9 col-12 index-img anim-300">
 						<?php if ( has_post_thumbnail()) : ?>
 							<?php the_post_thumbnail(); ?>

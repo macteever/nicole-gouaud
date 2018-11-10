@@ -508,12 +508,12 @@ main{
     margin-left: 43.5%;
     margin-top: 40vh;
 }
-#text-2{
+/* #text-2{
 	max-width: 70%;
 }
 #text-3{
 	margin-left: auto;
-}
+} */
 
 /*------------------------------------*\
     PAGES
@@ -777,6 +777,9 @@ textarea {
 	.no-flex-sm{
 		display: block!important;
 	}
+	#menu-btn{
+		margin-left: auto;
+	}
 	.menu-section{
 		height: auto;
 	}
@@ -786,33 +789,16 @@ textarea {
 	.large-menu nav ul{
 		display: none;
 	}
-	.img-blog-slider{
-		height: 200px;
-	}
-	.blog-posts-img{
-		height: 200px;
-	}
 	/** HOME **/
-	.home h1{
+	.home h1, .home h1 span{
 		font-size: 70px;
 	}
-	.home h1 span{
-		font-size: 100px;
-		line-height: 70px;
-	}
-	.text-container5-left{
-		width: auto!important;
-		margin-left: auto!important;
-		margin-right: auto!important;
-		padding: 0px 50px;
+	.home-therapy-child{
+		margin-bottom: 30px;
 	}
 	/* CONTACT */
-	.contact h1{
-		font-size: 42px;
-	}
-	.contact input, textarea{
-		width: 90%;
-	}
+
+	/* FOOTER */
 
 }
 @media only screen and (max-width:767px) {
@@ -823,8 +809,6 @@ textarea {
 	.home-title{margin-left: -210px;}
 	.blog-prev{display: none!important;}
 	.blog-next{display: none!important;}
-	.coaching-row p{padding-left: 13%;}
-	.about-top-right{padding-left: 13%;}
 	#menu-btn{
 		opacity: 1;
 	}
@@ -835,27 +819,78 @@ textarea {
 	#menu-btn:before{
 		height: 45px;
 	}
+	/* HEADER */
+	.logo-img{
+		width: 40px;
+		height: auto;
+		margin-top: 10px;
+	}
+	.resize-logo{
+		width: 25px;
+		height: auto;
+		margin-top: 0px;
+	}
 	/** HOME PAGE **/
-	.home h1{
-		font-size: 44px;
+	.home-slider{
+		height: 400px;
 	}
-	.home h2{
-		font-size: 32px;
+	.home-slide-content {
+    top: 80px;
+    left: 20px;
 	}
-	.home-posts-child a:first-child{
-		display: none;
+	.home h1, .home h1 span {
+    font-size: 50px;
+		line-height: 62px;
 	}
-	.social-networks {
-		justify-content: space-around;
+	.home h1 span{
+		background: transparent;
+		border: none;
+		padding: 0px;
+		margin-left: 0px;
 	}
-	.blog-posts-img{
-		height: 200px;
-		float: none!important;
+	.home-posts h2{
+		margin-left: 15px;
 	}
-	.logo-img {
-		width: 70px;
-		margin-top: 50px;
+	.home-post{
+		margin-bottom: 30px;
 	}
+	.home-post-overlay{
+		opacity: 1;
+	}
+	/* PAGE THERAPIE */
+	.therapy-bkg-child h1{
+		font-size: 32px!important;
+	}
+	.therapy-present-content {
+    columns: 1;
+	}
+	/* BLOG */
+	.blog{
+		margin-bottom: 80px!important;
+	}
+	.blog h1{
+		font-size: 42px;
+	}
+	.blog-row{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	/* SINGLE */
+	.single-row-margin{
+		margin: 0px;
+	}
+	.single-content{
+		columns: 1;
+	}
+	/* FOOTER */
+	footer{
+		padding-top: 50px!important;
+	}
+	.footer-block{
+		text-align: center!important;
+		margin-bottom: 30px;
+	}
+
 	/* CONTACT */
 	.text-container-left{
 		width: 90%!important;
@@ -885,28 +920,11 @@ textarea {
 	.main-navigation-zone{
 		display: none!important;
 	}
-	.logo-img{
-		margin-top: 25%;
-		width: 75%;
-		max-width: 150%!important;
-	}
 	#menu-btn{
 		margin-left: auto;
 	}
 	/* HOME PAGE */
-	.home-site-title{
-		text-align: center!important;
-	}
-	.home h1{
-		font-size: 60px;
-		margin-left: -30px;
-		font-size: 40px;
-	}
-	.home h1 span{
-		font-size: 56px;
-    	line-height: 50px;
-    	padding-left: 30px;
-	}
+
 	/* CONTACT */
 	.contact h1 {
     font-size: 36px;

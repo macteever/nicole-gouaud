@@ -60,7 +60,7 @@
 				    while ( have_rows('therapie') ) : the_row();
 						?>
 						<?php $image = get_sub_field('icon'); ?>
-						<div class="col-xl-4 col-lg-4 col-12">
+						<div class="col-xl-4 col-lg-4 col-12 home-therapy-child">
 							<img class="d-block" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 							<h3 class="subtitle-before lekton fs-20 ls-2 fw-700 mt-30"><?php the_sub_field('nom'); ?></h3>
 							<div class="">
