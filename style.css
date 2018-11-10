@@ -712,51 +712,34 @@ textarea {
 .blog article:hover .index-img{
 	transform: translateX(30px);
 }
-/***********PAGE ARTICLES *************/
-.posts-bkg{
-	background-color: #eaeaea;
-}
-.post-content{
-	background-color: #fff;
-	box-shadow: 0px 1px 3.9px 1.1px rgba(0, 0, 0, 0.35);
-	transform: translateY(-80px);
-}
-.post-content h1{
-	font-weight: bold;
-}
-.post-text p{
-	font-size: 18px;
-    line-height: 24px;
+/*********** SINGLE POST *************/
 
+.single-content{
+	columns: 2;
 }
-.post-details span{
-	font-weight: 200;
+.single-category ul{
+	list-style-type: none;
+	display: flex;
+	padding-left: 0px;
 }
-.social-share p{
-	letter-spacing: 2px;
+.single-category ul li{
+	padding: 5px 10px;
+	background-color: #FFF;
 }
-.social-share p::after{
-	content: "";
-	display: block;
-	width: 200px;
-	height: 1px;
-	background-color: #aaaaaa;
-	margin-left: auto;
-	margin-right: auto;
+.single-fb-share{
+	padding: 5px 13px;
+    border: solid 1px #FFF;
 }
-
+.single-google-share{
+	padding: 5px 6px;
+    border: solid 1px #FFF;
+}
 /*********** PAGE 404 *************/
 
 #page-404 section{
 	margin-top: 350px;
 	margin-bottom: 350px;
 }
-
-
-
-/*------------------------------------*\
-    IMAGES
-\*------------------------------------*/
 
 
 
@@ -769,8 +752,6 @@ textarea {
 .lekton{
 	font-family: 'Lekton', sans-serif;
 }
-
-
 
 /*------------------------------------*\
     RESPONSIVE
